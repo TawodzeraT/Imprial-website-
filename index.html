@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clean Website</title>
+  <meta name="description" content="A clean, minimal starter website." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#">CleanSite</a>
+
+      <nav class="nav">
+        <a href="#features">Features</a>
+        <a href="#cta">Get Started</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">
+        ☰
+      </button>
+    </div>
+
+    <div class="container mobile-nav" id="mobileNav" hidden>
+      <a href="#features">Features</a>
+      <a href="#cta">Get Started</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>Clean, simple, and ready to deploy.</h1>
+          <p>
+            This is a lightweight starter website: no frameworks, no bundlers, and no confusion.
+            Edit the text, swap colors, and you’re done.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn primary" href="#cta">Start Now</a>
+            <a class="btn" href="#features">See Features</a>
+          </div>
+
+          <div class="badge-row">
+            <span class="badge">Fast</span>
+            <span class="badge">Responsive</span>
+            <span class="badge">Accessible</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <h2>Quick Demo</h2>
+          <p class="muted">Type your name and click the button.</p>
+
+          <label class="label" for="nameInput">Your name</label>
+          <input id="nameInput" class="input" type="text" placeholder="e.g., Tavonga" />
+
+          <button id="helloBtn" class="btn primary full">Say hello</button>
+          <p id="output" class="output" aria-live="polite"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="container">
+        <h2>Features</h2>
+        <p class="muted">A few practical defaults for a modern small website.</p>
+
+        <div class="grid">
+          <article class="feature">
+            <h3>Responsive layout</h3>
+            <p>Looks good on mobile and desktop without extra work.</p>
+          </article>
+
+          <article class="feature">
+            <h3>Clean styling</h3>
+            <p>Simple design system: spacing, buttons, and typography.</p>
+          </article>
+
+          <article class="feature">
+            <h3>Vanilla JS</h3>
+            <p>No build tools required. Runs anywhere.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt" id="cta">
+      <div class="container cta">
+        <div>
+          <h2>Ready to customize?</h2>
+          <p class="muted">
+            Replace the brand name, change the colors in <code>styles.css</code>, and add your content.
+          </p>
+        </div>
+        <a class="btn primary" href="#contact">Contact</a>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="muted">Example contact form (front-end only).</p>
+
+        <form class="form" id="contactForm">
+          <div class="row">
+            <div>
+              <label class="label" for="email">Email</label>
+              <input class="input" id="email" type="email" required placeholder="you@example.com" />
+            </div>
+            <div>
+              <label class="label" for="subject">Subject</label>
+              <input class="input" id="subject" type="text" required placeholder="Project inquiry" />
+            </div>
+          </div>
+
+          <div>
+            <label class="label" for="message">Message</label>
+            <textarea class="input" id="message" rows="5" required placeholder="Tell me what you need..."></textarea>
+          </div>
+
+          <button class="btn primary" type="submit">Send</button>
+          <p class="muted" id="formStatus" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-row">
+      <small>© <span id="year"></span> CleanSite. All rights reserved.</small>
+      <small class="muted">Built with HTML/CSS/JS.</small>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
